@@ -1,0 +1,55 @@
+
+===================================================================
+Protocol Hierarchy Statistics
+Filter: 
+
+frame                                    frames:15512 bytes:6333775
+  eth                                    frames:15512 bytes:6333775
+    ip                                   frames:14676 bytes:6283615
+      udp                                frames:2113 bytes:696090
+        dhcp                             frames:4 bytes:1449
+        dns                              frames:809 bytes:107836
+        cldap                            frames:64 bytes:16105
+        llmnr                            frames:4 bytes:300
+        nbns                             frames:118 bytes:12674
+        ssdp                             frames:27 bytes:4825
+        ntp                              frames:28 bytes:4536
+        nbdgm                            frames:430 bytes:100818
+          smb                            frames:430 bytes:100818
+            mailslot                     frames:430 bytes:100818
+              browser                    frames:430 bytes:100818
+        quic                             frames:626 bytes:447301
+          quic                           frames:2 bytes:1502
+        mdns                             frames:3 bytes:246
+      tcp                                frames:12544 bytes:5583486
+        ldap                             frames:519 bytes:191794
+          ldap                           frames:29 bytes:40252
+        nbss                             frames:808 bytes:207241
+          smb                            frames:23 bytes:4899
+          smb2                           frames:785 bytes:202342
+            dcerpc                       frames:56 bytes:15160
+              samr                       frames:30 bytes:8144
+              lsarpc                     frames:16 bytes:4096
+                _ws.malformed            frames:4 bytes:1472
+            smb2                         frames:42 bytes:15443
+              smb2                       frames:14 bytes:5237
+            data                         frames:8 bytes:6056
+        http                             frames:354 bytes:122701
+          data-text-lines                frames:1 bytes:241
+          urlencoded-form                frames:266 bytes:76419
+          media                          frames:25 bytes:18139
+          ocsp                           frames:2 bytes:1560
+          json                           frames:1 bytes:918
+            data-text-lines              frames:1 bytes:918
+        tls                              frames:2052 bytes:1176884
+          tls                            frames:122 bytes:157364
+        kerberos                         frames:16 bytes:4516
+        dcerpc                           frames:760 bytes:222428
+          epm                            frames:132 bytes:36192
+          drsuapi                        frames:352 bytes:99520
+          rpc_netlogon                   frames:6 bytes:6372
+          lsarpc                         frames:24 bytes:6768
+        data                             frames:332 bytes:19920
+      icmp                               frames:19 bytes:4039
+    arp                                  frames:836 bytes:50160
+===================================================================
