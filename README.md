@@ -1,8 +1,7 @@
 # Network Intrusion Detection and Incident Investigation
 
 I analyzed a packet capture from a Windows Active Directory network to find out which machine was infected with a remote access trojan (NetSupport Manager RAT), who was using it, and what the malware was doing. This was done as a SOC analyst exercise using Wireshark and tshark on Kali Linux.
-
-!\[Investigation flow](case01/deliverables/investigation\_flow.svg)
+![Investigation flow](case01/deliverables/investigation_flow.svg)
 
 ## What happened
 
