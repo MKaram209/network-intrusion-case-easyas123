@@ -1,4 +1,4 @@
-File name:           case01/evidence/2026-02-28-traffic-analysis-exercise.pcap
+File name:           evidence/2026-02-28-traffic-analysis-exercise.pcap
 File type:           Wireshark/tcpdump/... - pcap
 File encapsulation:  Ethernet
 File timestamp precision:  microseconds (6)

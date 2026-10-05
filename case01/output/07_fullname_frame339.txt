@@ -1,0 +1,395 @@
+Frame 339: Packet, 862 bytes on wire (6896 bits), 862 bytes captured (6896 bits)
+    Encapsulation type: Ethernet (1)
+    Arrival Time: Feb 28, 2026 14:55:23.237995000 EST
+    UTC Arrival Time: Feb 28, 2026 19:55:23.237995000 UTC
+    Epoch Arrival Time: 1772308523.237995000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 516.000 microseconds]
+    [Time since reference or first frame: 16.755086000 seconds]
+    Frame Number: 339
+    Frame Length: 862 bytes (6896 bits)
+    Capture Length: 862 bytes (6896 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: eth:ethertype:ip:tcp:nbss:smb2:dcerpc]
+    Character encoding: ASCII (0)
+Ethernet II, Src: Dell_2d:ce:69 (14:b3:1f:2d:ce:69), Dst: Intel_b2:4d:ad (00:19:d1:b2:4d:ad)
+    Destination: Intel_b2:4d:ad (00:19:d1:b2:4d:ad)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Source: Dell_2d:ce:69 (14:b3:1f:2d:ce:69)
+        .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+        .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+    Type: IPv4 (0x0800)
+    [Stream index: 3]
+Internet Protocol Version 4, Src: 10.2.28.2, Dst: 10.2.28.88
+    0100 .... = Version: 4
+    .... 0101 = Header Length: 20 bytes (5)
+    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        0000 00.. = Differentiated Services Codepoint: Default (0)
+        .... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    Total Length: 848
+    Identification: 0x287b (10363)
+    010. .... = Flags: 0x2, Don't fragment
+        0... .... = Reserved bit: Not set
+        .1.. .... = Don't fragment: Set
+        ..0. .... = More fragments: Not set
+    ...0 0000 0000 0000 = Fragment Offset: 0
+    Time to Live: 128
+    Protocol: TCP (6)
+    Header Checksum: 0x82cf [validation disabled]
+    [Header checksum status: Unverified]
+    Source Address: 10.2.28.2
+    Destination Address: 10.2.28.88
+    [Stream index: 1]
+Transmission Control Protocol, Src Port: 445, Dst Port: 59988, Seq: 3166, Ack: 6588, Len: 808
+    Source Port: 445
+    Destination Port: 59988
+    [Stream index: 9]
+    [Stream Packet Number: 42]
+    [Conversation completeness: Incomplete, DATA (15)]
+        ..0. .... = RST: Absent
+        ...0 .... = FIN: Absent
+        .... 1... = Data: Present
+        .... .1.. = ACK: Present
+        .... ..1. = SYN-ACK: Present
+        .... ...1 = SYN: Present
+        [Completeness Flags: ··DASS]
+    [TCP Segment Len: 808]
+    Sequence Number: 3166    (relative sequence number)
+    Sequence Number (raw): 3574720949
+    [Next Sequence Number: 3974    (relative sequence number)]
+    Acknowledgment Number: 6588    (relative ack number)
+    Acknowledgment number (raw): 2376657937
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 4099
+    [Calculated window size: 1049344]
+    [Window size scaling factor: 256]
+    Checksum: 0xeae0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+        [Time since first frame in this TCP stream: 19.985000 milliseconds]
+        [Time since previous frame in this TCP stream: 516.000 microseconds]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 338]
+        [The RTT to ACK the segment was: 516.000 microseconds]
+        [iRTT: 134.000 microseconds]
+        [Bytes in flight: 808]
+        [Bytes sent since last PSH flag: 808]
+    [Client Contiguous Streams: 1]
+    [Server Contiguous Streams: 1]
+    TCP payload (808 bytes)
+NetBIOS Session Service
+    Message Type: Session message (0x00)
+    Length: 804
+SMB2 (Server Message Block Protocol version 2), Ioctl Response, MessageId 16
+    SMB2 Header
+        ProtocolId: 0xfe534d42
+        Header Length: 64
+        Credit Charge: 1
+        NT Status: STATUS_SUCCESS (0x00000000)
+        Command: Ioctl (11)
+        Credits granted: 1
+        Flags: 0x00000039, Response, Signing, Priority
+            .... .... .... .... .... .... .... ...1 = Response: This is a RESPONSE
+            .... .... .... .... .... .... .... ..0. = Async command: This is a SYNC command
+            .... .... .... .... .... .... .... .0.. = Chained: This pdu is NOT a chained command
+            .... .... .... .... .... .... .... 1... = Signing: This pdu is SIGNED
+            .... .... .... .... .... .... .011 .... = Priority: This pdu contains a PRIORITY
+            ...0 .... .... .... .... .... .... .... = DFS operation: This is a normal operation
+            ..0. .... .... .... .... .... .... .... = Replay operation: This is NOT a replay operation
+        Chain Offset: 0x00000000
+        Message ID: 16
+        Reserved: 0x0000feff
+        Tree Id: 0x00000001  \\EASYAS123-DC.easyas123.tech\IPC$
+            [Tree: \\EASYAS123-DC.easyas123.tech\IPC$]
+            [Share Type: Named pipe (0x02)]
+            [Connected in Frame: 311]
+            [Disconnected in Frame: 0]
+        Session Id: 0x00013c000c000069
+            [Authenticated in Frame: 309]
+        Signature: 6828695c1bbcb5116c4e445c299d63dd
+        [Response to: 338]
+        [Time from request: 516.000 microseconds]
+    Ioctl Response (0x0b)
+        StructureSize: 0x0031
+            0000 0000 0011 000. = Fixed Part Length: 24
+            .... .... .... ...1 = Dynamic Part: True
+        Reserved: 0000
+        Function: FSCTL_PIPE_TRANSCEIVE (0x0011c017)
+            0000 0000 0001 0001 .... .... .... .... = Device: NAMED_PIPE (0x0011)
+            .... .... .... .... 11.. .... .... .... = Access: FILE_READ_WRITE_ACCESS (0x3)
+            .... .... .... .... ..00 0000 0001 01.. = Function: 0x005
+            .... .... .... .... .... .... .... ..11 = Method: METHOD_NEITHER (0x3)
+        [File Id Hash: 0x185246e8]
+        GUID handle, File: samr
+            File Id: 000000ca-004f-0000-0100-00004f000000
+            [Frame handle opened: 316]
+        Flags: 0x00000000
+        Reserved: 00000000
+        Blob Offset: 0x00000070
+        Blob Length: 0
+        In Data: NO DATA
+        Blob Offset: 0x00000070
+        Blob Length: 692
+        Out Data
+Distributed Computing Environment / Remote Procedure Call (DCE/RPC) Response, Fragment: Single, FragLen: 692, Call: 9, Ctx: 1, [Req: #338]
+    Version: 5
+    Version (minor): 0
+    Packet type: Response (2)
+    Packet Flags: 0x03
+        0... .... = Object: Not set
+        .0.. .... = Maybe: Not set
+        ..0. .... = Did Not Execute: Not set
+        ...0 .... = Multiplex: Not set
+        .... 0... = Reserved: Not set
+        .... .0.. = Cancel Pending: Not set
+        .... ..1. = Last Frag: Set
+        .... ...1 = First Frag: Set
+    Data Representation: 10000000 (Order: Little-endian, Char: ASCII, Float: IEEE)
+        Byte order: Little-endian (1)
+        Character: ASCII (0)
+        Floating-point: IEEE (0)
+    Frag Length: 692
+    Auth Length: 0
+    Call ID: 9
+    Alloc hint: 668
+    Context ID: 1
+    Cancel count: 0
+    [Opnum: 36]
+    [Request in frame: 338]
+    [Time from request: 516.000 microseconds]
+    Complete stub data (668 bytes)
+        Payload stub data (668 bytes)
+SAMR (pidl), QueryUserInfo
+    Operation: QueryUserInfo (36)
+    [Request in frame: 338]
+    Pointer to Info (samr_UserInfo)
+        Pointer to Info (samr_UserInfo)
+            Referent ID: 0x0000000000020000
+            samr_UserInfo
+                Info
+                Info21
+                    Last Logon: Feb 28, 2026 14:55:22.828579900 EST
+                    Last Logoff: No time specified (0)
+                    Last Password Change: Feb 28, 2026 13:16:45.445340700 EST
+                    Acct Expiry: Infinity (absolute time)
+                    Allow Password Change: Mar  1, 2026 13:16:45.445340700 EST
+                    Force Password Change: Apr 11, 2026 14:16:45.445340700 EDT
+                    Account Name: 
+                        Name Len: 10
+                        Name Size: 10
+                        Account Name
+                            Referent ID: 0x0000000000020000
+                            Max Count: 5
+                            Offset: 0
+                            Actual Count: 5
+                            Account Name: brolf
+                    Full Name: 
+                        Name Len: 20
+                        Name Size: 20
+                        Full Name
+                            Referent ID: 0x0000000000020000
+                            NDR-Padding: 000000000000
+                            Max Count: 10
+                            Offset: 0
+                            Actual Count: 10
+                            Full Name: Becka Rolf
+                    Home Directory: 
+                        Name Len: 0
+                        Name Size: 0
+                        Home Directory
+                            Referent ID: 0x0000000000020000
+                            NDR-Padding: 00000000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Home Drive: 
+                        Name Len: 0
+                        Name Size: 0
+                        Home Drive
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Logon Script: 
+                        Name Len: 0
+                        Name Size: 0
+                        Logon Script
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Profile Path: 
+                        Name Len: 0
+                        Name Size: 0
+                        Profile Path
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Description: 
+                        Name Len: 0
+                        Name Size: 0
+                        Description
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Workstations: 
+                        Name Len: 0
+                        Name Size: 0
+                        Workstations
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Comment: 
+                        Name Len: 0
+                        Name Size: 0
+                        Comment
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Parameters: 
+                        [Expert Info (Warning/Undecoded): Trailing stray characters]
+                            [Trailing stray characters]
+                            [Severity level: Warning]
+                            [Group: Undecoded]
+                        Length: 0
+                        Size: 0
+                        Pointer to Array (uint16)
+                            Referent ID: 0x0000000000020000
+                            Max Count: 0
+                            Offset: 0
+                            Actual Count: 0
+                    Lm Owf Password: 
+                        [Expert Info (Warning/Undecoded): Trailing stray characters]
+                            [Trailing stray characters]
+                            [Severity level: Warning]
+                            [Group: Undecoded]
+                        Length: 0
+                        Size: 0
+                        NULL Pointer: Pointer to Array (uint16)
+                    Nt Owf Password: 
+                        [Expert Info (Warning/Undecoded): Trailing stray characters]
+                            [Trailing stray characters]
+                            [Severity level: Warning]
+                            [Group: Undecoded]
+                        Length: 0
+                        Size: 0
+                        NULL Pointer: Pointer to Array (uint16)
+                    Private Data: 
+                        Name Len: 0
+                        Name Size: 0
+                        NULL Pointer: Private Data
+                    Buf Count: 0
+                    NULL Pointer: Pointer to Buffer (uint8)
+                    RID: 1103
+                    Primary Gid: 513
+                    Acct Flags: 0x00000010, ACB NORMAL: ACB_NORMAL is SET
+                        .... .... .... .... .... .... .... ...0 = ACB DISABLED: ACB_DISABLED is NOT SET
+                        .... .... .... .... .... .... .... ..0. = ACB HOMDIRREQ: ACB_HOMDIRREQ is NOT SET
+                        .... .... .... .... .... .... .... .0.. = ACB PWNOTREQ: ACB_PWNOTREQ is NOT SET
+                        .... .... .... .... .... .... .... 0... = ACB TEMPDUP: ACB_TEMPDUP is NOT SET
+                        .... .... .... .... .... .... ...1 .... = ACB NORMAL: ACB_NORMAL is SET
+                        .... .... .... .... .... .... ..0. .... = ACB MNS: ACB_MNS is NOT SET
+                        .... .... .... .... .... .... .0.. .... = ACB DOMTRUST: ACB_DOMTRUST is NOT SET
+                        .... .... .... .... .... .... 0... .... = ACB WSTRUST: ACB_WSTRUST is NOT SET
+                        .... .... .... .... .... ...0 .... .... = ACB SVRTRUST: ACB_SVRTRUST is NOT SET
+                        .... .... .... .... .... ..0. .... .... = ACB PWNOEXP: ACB_PWNOEXP is NOT SET
+                        .... .... .... .... .... .0.. .... .... = ACB AUTOLOCK: ACB_AUTOLOCK is NOT SET
+                        .... .... .... .... .... 0... .... .... = ACB ENC TXT PWD ALLOWED: ACB_ENC_TXT_PWD_ALLOWED is NOT SET
+                        .... .... .... .... ...0 .... .... .... = ACB SMARTCARD REQUIRED: ACB_SMARTCARD_REQUIRED is NOT SET
+                        .... .... .... .... ..0. .... .... .... = ACB TRUSTED FOR DELEGATION: ACB_TRUSTED_FOR_DELEGATION is NOT SET
+                        .... .... .... .... .0.. .... .... .... = ACB NOT DELEGATED: ACB_NOT_DELEGATED is NOT SET
+                        .... .... .... .... 0... .... .... .... = ACB USE DES KEY ONLY: ACB_USE_DES_KEY_ONLY is NOT SET
+                        .... .... .... ...0 .... .... .... .... = ACB DONT REQUIRE PREAUTH: ACB_DONT_REQUIRE_PREAUTH is NOT SET
+                        .... .... .... ..0. .... .... .... .... = ACB PW EXPIRED: ACB_PW_EXPIRED is NOT SET
+                        .... .... .... .0.. .... .... .... .... = ACB TRUSTED TO AUTHENTICATE FOR DELEGATION: ACB_TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION is NOT SET
+                        .... .... .... 0... .... .... .... .... = ACB NO AUTH DATA REQD: ACB_NO_AUTH_DATA_REQD is NOT SET
+                        .... .... ...0 .... .... .... .... .... = ACB PARTIAL SECRETS ACCOUNT: ACB_PARTIAL_SECRETS_ACCOUNT is NOT SET
+                        .... .... ..0. .... .... .... .... .... = ACB USE AES KEYS: ACB_USE_AES_KEYS is NOT SET
+                    Fields Present […]: 0x00ffffff, SAMR FIELD ACCOUNT NAME: SAMR_FIELD_ACCOUNT_NAME is SET, SAMR FIELD FULL NAME: SAMR_FIELD_FULL_NAME is SET, SAMR FIELD RID: SAMR_FIELD_RID is SET, SAMR FIELD PRIMARY GID: SAMR_FIELD_PRIMARY_GID is SET, SAM
+                        .... .... .... .... .... .... .... ...1 = SAMR FIELD ACCOUNT NAME: SAMR_FIELD_ACCOUNT_NAME is SET
+                        .... .... .... .... .... .... .... ..1. = SAMR FIELD FULL NAME: SAMR_FIELD_FULL_NAME is SET
+                        .... .... .... .... .... .... .... .1.. = SAMR FIELD RID: SAMR_FIELD_RID is SET
+                        .... .... .... .... .... .... .... 1... = SAMR FIELD PRIMARY GID: SAMR_FIELD_PRIMARY_GID is SET
+                        .... .... .... .... .... .... ...1 .... = SAMR FIELD DESCRIPTION: SAMR_FIELD_DESCRIPTION is SET
+                        .... .... .... .... .... .... ..1. .... = SAMR FIELD COMMENT: SAMR_FIELD_COMMENT is SET
+                        .... .... .... .... .... .... .1.. .... = SAMR FIELD HOME DIRECTORY: SAMR_FIELD_HOME_DIRECTORY is SET
+                        .... .... .... .... .... .... 1... .... = SAMR FIELD HOME DRIVE: SAMR_FIELD_HOME_DRIVE is SET
+                        .... .... .... .... .... ...1 .... .... = SAMR FIELD LOGON SCRIPT: SAMR_FIELD_LOGON_SCRIPT is SET
+                        .... .... .... .... .... ..1. .... .... = SAMR FIELD PROFILE PATH: SAMR_FIELD_PROFILE_PATH is SET
+                        .... .... .... .... .... .1.. .... .... = SAMR FIELD WORKSTATIONS: SAMR_FIELD_WORKSTATIONS is SET
+                        .... .... .... .... .... 1... .... .... = SAMR FIELD LAST LOGON: SAMR_FIELD_LAST_LOGON is SET
+                        .... .... .... .... ...1 .... .... .... = SAMR FIELD LAST LOGOFF: SAMR_FIELD_LAST_LOGOFF is SET
+                        .... .... .... .... ..1. .... .... .... = SAMR FIELD LOGON HOURS: SAMR_FIELD_LOGON_HOURS is SET
+                        .... .... .... .... .1.. .... .... .... = SAMR FIELD BAD PWD COUNT: SAMR_FIELD_BAD_PWD_COUNT is SET
+                        .... .... .... .... 1... .... .... .... = SAMR FIELD NUM LOGONS: SAMR_FIELD_NUM_LOGONS is SET
+                        .... .... .... ...1 .... .... .... .... = SAMR FIELD ALLOW PWD CHANGE: SAMR_FIELD_ALLOW_PWD_CHANGE is SET
+                        .... .... .... ..1. .... .... .... .... = SAMR FIELD FORCE PWD CHANGE: SAMR_FIELD_FORCE_PWD_CHANGE is SET
+                        .... .... .... .1.. .... .... .... .... = SAMR FIELD LAST PWD CHANGE: SAMR_FIELD_LAST_PWD_CHANGE is SET
+                        .... .... .... 1... .... .... .... .... = SAMR FIELD ACCT EXPIRY: SAMR_FIELD_ACCT_EXPIRY is SET
+                        .... .... ...1 .... .... .... .... .... = SAMR FIELD ACCT FLAGS: SAMR_FIELD_ACCT_FLAGS is SET
+                        .... .... ..1. .... .... .... .... .... = SAMR FIELD PARAMETERS: SAMR_FIELD_PARAMETERS is SET
+                        .... .... .1.. .... .... .... .... .... = SAMR FIELD COUNTRY CODE: SAMR_FIELD_COUNTRY_CODE is SET
+                        .... .... 1... .... .... .... .... .... = SAMR FIELD CODE PAGE: SAMR_FIELD_CODE_PAGE is SET
+                        .... ...0 .... .... .... .... .... .... = SAMR FIELD NT PASSWORD PRESENT: SAMR_FIELD_NT_PASSWORD_PRESENT is NOT SET
+                        .... ..0. .... .... .... .... .... .... = SAMR FIELD LM PASSWORD PRESENT: SAMR_FIELD_LM_PASSWORD_PRESENT is NOT SET
+                        .... .0.. .... .... .... .... .... .... = SAMR FIELD PRIVATE DATA: SAMR_FIELD_PRIVATE_DATA is NOT SET
+                        .... 0... .... .... .... .... .... .... = SAMR FIELD EXPIRED FLAG: SAMR_FIELD_EXPIRED_FLAG is NOT SET
+                        ...0 .... .... .... .... .... .... .... = SAMR FIELD SEC DESC: SAMR_FIELD_SEC_DESC is NOT SET
+                        ..0. .... .... .... .... .... .... .... = SAMR FIELD OWF PWD: SAMR_FIELD_OWF_PWD is NOT SET
+                    Logon Hours
+                        Units Per Week: 168
+                        Pointer to Bits (uint8)
+                            Referent ID: 0x0000000000020000
+                            Max Count: 1260
+                            Offset: 0
+                            Actual Count: 21
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                            Bits: 255
+                    Bad Password Count: 0
+                    Logon Count: 6
+                    Country Code: 0
+                    Code Page: 0
+                    Lm Password Set: 0
+                    Nt Password Set: 0
+                    Password Expired: 0
+                    Private Data Sensitive: 0
+    NT Error: STATUS_SUCCESS (0x00000000)
+
