@@ -1,1 +1,1 @@
-couldnt figure out the command (RIP) i uploaded a screenshot in screenshots folder instead!
+couldnt figure out the command on tshark to grab the specific packet details of the name (i just simply filtered out Rolf in packet details), it was a guess since the username was brolf so most probabe b was the initial and rolf is secondary  and  i uploaded a screenshot in screenshots folder instead!
