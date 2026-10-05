@@ -18,7 +18,7 @@ At 19:55:51 UTC on 2026-02-28, the workstation DESKTOP-TEYQ2NR (10.2.28.88) conn
 |User account|brolf|Kerberos, frame 243, `output/06\_username.txt`|
 |Full name|Becka Rolf|SAMR reply, frame 339, `output/07\_fullname\_frame339.txt`|
 
-Screenshots of each finding are in `case01/screenshots`.
+Screenshots of each finding are in [Screenshots](case01/screenshots/).
 
 ## Process
 
