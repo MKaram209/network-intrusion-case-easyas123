@@ -46,7 +46,7 @@ tshark -r evidence/2026-02-28-traffic-analysis-exercise.pcap \\
 |User agent|NetSupport Manager/1.3|
 |Behavior|one POST every 60 seconds, from 19:55:51 UTC to the end of the capture|
 
-Full list in [`notes/iocs.md`](notes/iocs.md).
+Full list in [`IOCS`](case01/notes/iocs.md).
 
 ## Timeline
 
@@ -60,7 +60,7 @@ Full list in [`notes/iocs.md`](notes/iocs.md).
 |19:56:52 onward|Beaconing, one POST per minute|
 |00:16:28 (Mar 1)|Last beacon; capture ends seven seconds later|
 
-The event list with frame numbers is in [`notes/timeline.csv`](notes/timeline.csv).
+The event list with frame numbers is in [`timeline.csv`](case01/notes/timeline.csv).
 
 ## Recommendations
 
@@ -69,7 +69,7 @@ The event list with frame numbers is in [`notes/timeline.csv`](notes/timeline.cs
 * Search proxy and firewall logs for other hosts contacting the C2 address or sending POSTs to `/fakeurl.htm`.
 * Block unapproved remote access tools, and alert on regular beaconing and on plain HTTP over port 443.
 
-Full list in [`notes/mitigations.md`](notes/mitigations.md).
+Full list in [`mitigations.md`](case01/notes/mitigations.md).
 
 ## Limitations
 
@@ -87,5 +87,5 @@ notes/          case log, IOCs, timeline, mitigations
 deliverables/   flow diagram, timeline chart, chart script
 ```
 
-The step-by-step record of what I ran and why is in [`notes/log.md`](notes/log.md).
+The step-by-step record of what I ran and why is in [`log.md`](case01/notes/log.md).
 
