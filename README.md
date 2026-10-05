@@ -1,5 +1,7 @@
 # Network Intrusion Detection and Incident Investigation
 
+> **Note:** This workflow was made by claude after i did already derive the answers on my own,I just simply used ai for documentation and help in syntax ( since im still fairly new to linux)
+
 I analyzed a packet capture from a Windows Active Directory network to find out which machine was infected with a remote access trojan (NetSupport Manager RAT), who was using it, and what the malware was doing. This was done as a SOC analyst exercise using Wireshark and tshark on Kali Linux.
 ![Investigation flow](case01/deliverables/investigation_flow.svg)
 
