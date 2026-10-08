@@ -1,6 +1,18 @@
 # Network Intrusion Detection and Incident Investigation
 
-> **Note:** This workflow was made by claude after i did already derive the answers on my own,I just simply used ai for documentation and help in syntax ( since im still fairly new to linux)
+
+## Summary of Workflow
+
+1. I set up the main directory (case01)
+2. Made subfolders based on what's required and the scope
+3. Hashed the evidence file (.pcap) to ensure I didn't play with or edit it
+4. Dug in and analyzed to map out where and when the attack happened
+5. Tracked key milestones and timestamps (like when the initial attack connection started)
+6. Wrote that in a CSV file for clarity
+7. Passed that CSV to a Python script to map it visually using matplotlib and generate a visual chart
+
+
+> **Note:** This upcoming workflow  was made by claude after i did already derive the answers on my own,I just simply used ai for documentation and help in syntax ( since im still fairly new to linux)
 
 I analyzed a packet capture from a Windows Active Directory network to find out which machine was infected with a remote access trojan (NetSupport Manager RAT), who was using it, and what the malware was doing. This was done as a SOC analyst exercise using Wireshark and tshark on Kali Linux.
 ![Investigation flow](case01/deliverables/investigation_flow.svg)
