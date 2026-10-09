@@ -14,6 +14,8 @@
 
 > **Note:** This upcoming workflow  was made by claude after i did already derive the answers on my own,I just simply used ai for documentation and help in syntax ( since im still fairly new to linux)
 
+I don't condone relying on AI completely. It degrades your thinking ability and makes you dependent on it. But we are in an AI era, and not integrating it into your daily workflow can be just as detrimental. My approach is to do the thinking and the building myself, and use AI as a tool for things like documentation, where it saves time without replacing what I need to learn.
+
 I analyzed a packet capture from a Windows Active Directory network to find out which machine was infected with a remote access trojan (NetSupport Manager RAT), who was using it, and what the malware was doing. This was done as a SOC analyst exercise using Wireshark and tshark on Kali Linux.
 ![Investigation flow](case01/deliverables/investigation_flow.svg)
 
